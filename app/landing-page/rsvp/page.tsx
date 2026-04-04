@@ -15,7 +15,7 @@ const wishes: Wish[] = [
     name: "Aditya Pratama",
     time: "10 Menit yang lalu",
     message:
-      "Selamat menempuh hidup baru Maya dan Alex! Semoga cinta kalian selalu mekar seperti bunga di musim semi, abadi dan penuh warna.",
+      "Selamat menempuh hidup baru Tiara dan Siddiq! Semoga cinta kalian selalu mekar seperti bunga di musim semi, abadi dan penuh warna.",
   },
   {
     name: "Sarah & Mike",
@@ -39,12 +39,13 @@ const wishes: Wish[] = [
     name: "Bambang Wijaya",
     time: "6 Jam yang lalu",
     message:
-      "Selamat ya Alex! Jagain Maya baik-baik. Semoga dilancarkan segala urusannya sampai maut memisahkan.",
+      "Selamat ya Siddiq! Jagain Tiara baik-baik. Semoga dilancarkan segala urusannya sampai maut memisahkan.",
   },
   {
     name: "Rizky Febrian",
     time: "8 Jam yang lalu",
-    message: "Happy wedding guys! May your journey be filled with joy and countless beautiful memories.",
+    message:
+      "Happy wedding guys! May your journey be filled with joy and countless beautiful memories.",
   },
   {
     name: "Citra Kirana",
@@ -55,7 +56,8 @@ const wishes: Wish[] = [
   {
     name: "Tante Lisa & Om Rudi",
     time: "Kemarin, 21:00",
-    message: "A beautiful wedding for a beautiful couple. Congratulations on starting your forever.",
+    message:
+      "A beautiful wedding for a beautiful couple. Congratulations on starting your forever.",
   },
   {
     name: "Drs. Hendrawan",
@@ -66,7 +68,7 @@ const wishes: Wish[] = [
   {
     name: "Kevin Sanjaya",
     time: "Kemarin, 18:20",
-    message: "Wishing you both a lifetime of togetherness. Proud of you, Alex!",
+    message: "Wishing you both a lifetime of togetherness. Proud of you, Siddiq!",
     tone: "primary",
   },
 ];
@@ -112,21 +114,38 @@ export default function RsvpPage() {
     <main className="bg-surface text-on-surface">
       <header className="fixed top-0 z-50 w-full bg-surface/70 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-4">
-          <Link className="font-headline text-2xl font-bold italic tracking-tight text-primary" href="/">
+          <Link
+            className="font-headline text-2xl font-bold italic tracking-tight text-primary"
+            href="/"
+          >
             The Editorial Union
           </Link>
           <nav className="hidden items-center gap-8 md:flex">
-            <Link className="text-sm text-primary/80 transition-all hover:text-secondary" href="/landing-page/cerita">
+            <Link
+              className="text-sm text-primary/80 transition-all hover:text-secondary"
+              href="/landing-page/cerita"
+            >
               Our Story
             </Link>
-            <Link className="text-sm text-primary/80 transition-all hover:text-secondary" href="/#acara">
+            <Link
+              className="text-sm text-primary/80 transition-all hover:text-secondary"
+              href="/#acara"
+            >
               Events
             </Link>
-            <Link className="text-sm text-primary/80 transition-all hover:text-secondary" href="/landing-page/galeri">
+            <Link
+              className="text-sm text-primary/80 transition-all hover:text-secondary"
+              href="/landing-page/galeri"
+            >
               Gallery
             </Link>
-            <span className="border-b-2 border-secondary pb-1 text-sm font-bold text-secondary">Wishes</span>
-            <Link className="rounded-xl bg-secondary px-6 py-2 font-medium text-on-secondary" href="/#rsvp">
+            <span className="border-b-2 border-secondary pb-1 text-sm font-bold text-secondary">
+              Wishes
+            </span>
+            <Link
+              className="rounded-xl bg-secondary px-6 py-2 font-medium text-on-secondary"
+              href="/#rsvp"
+            >
               RSVP
             </Link>
           </nav>
@@ -146,10 +165,14 @@ export default function RsvpPage() {
             Doa Restu dari Kerabat
           </h1>
           <p className="max-w-2xl text-lg leading-relaxed text-on-surface-variant/90">
-            Terima kasih atas segala ucapan manis dan doa tulus yang telah diberikan. Kehadiran dan perhatian Anda adalah kado terindah bagi perjalanan baru kami.
+            Terima kasih atas segala ucapan manis dan doa tulus yang telah diberikan. Kehadiran dan
+            perhatian Anda adalah kado terindah bagi perjalanan baru kami.
           </p>
           <div className="mt-12">
-            <Link className="inline-flex items-center gap-3 font-semibold text-secondary transition-all hover:gap-5" href="/">
+            <Link
+              className="inline-flex items-center gap-3 font-semibold text-secondary transition-all hover:gap-5"
+              href="/"
+            >
               <FiArrowLeft />
               Kembali ke Beranda
             </Link>
@@ -200,13 +223,22 @@ export default function RsvpPage() {
             </p>
           </div>
           <div className="flex gap-8">
-            <a className="text-sm tracking-wide text-primary/60 transition-colors hover:text-secondary" href="#">
+            <a
+              className="text-sm tracking-wide text-primary/60 transition-colors hover:text-secondary"
+              href="#"
+            >
               Privacy Policy
             </a>
-            <a className="text-sm tracking-wide text-primary/60 transition-colors hover:text-secondary" href="#">
+            <a
+              className="text-sm tracking-wide text-primary/60 transition-colors hover:text-secondary"
+              href="#"
+            >
               Contact Us
             </a>
-            <a className="text-sm tracking-wide text-primary/60 transition-colors hover:text-secondary" href="#">
+            <a
+              className="text-sm tracking-wide text-primary/60 transition-colors hover:text-secondary"
+              href="#"
+            >
               Registry
             </a>
           </div>

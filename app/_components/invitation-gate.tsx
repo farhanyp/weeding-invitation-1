@@ -45,7 +45,7 @@ export function InvitationGate({ children }: InvitationGateProps) {
             The Wedding Celebration of
           </p>
           <h1 className="font-headline text-6xl leading-none font-extralight tracking-tighter text-white italic md:text-8xl">
-            Maya <span className="text-secondary">&amp;</span> Alex
+            Tiara <span className="text-secondary">&amp;</span> Siddiq
           </h1>
         </div>
 

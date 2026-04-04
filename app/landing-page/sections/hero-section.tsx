@@ -16,15 +16,19 @@ export function HeroSection() {
           The Wedding Celebration of
         </span>
         <h1 className="mb-8 font-headline text-[5rem] leading-[0.9] font-light italic text-primary md:text-[8rem]">
-          Maya <span className="text-secondary">&amp;</span> Alex
+          Tiara <span className="text-secondary">&amp;</span> Siddiq
         </h1>
         <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-12">
           <div className="text-center">
-            <p className="font-headline text-2xl italic text-on-surface-variant">24 September 2024</p>
+            <p className="font-headline text-2xl italic text-on-surface-variant">
+              24 September 2024
+            </p>
           </div>
           <div className="hidden h-px w-12 bg-outline-variant md:block" />
           <div className="text-center">
-            <p className="font-headline text-2xl italic text-on-surface-variant">The Glass House, Jakarta</p>
+            <p className="font-headline text-2xl italic text-on-surface-variant">
+              The Glass House, Jakarta
+            </p>
           </div>
         </div>
       </div>

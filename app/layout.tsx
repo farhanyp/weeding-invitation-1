@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Maya & Alex | The Editorial Union",
-  description:
-    "Landing page undangan pernikahan editorial untuk Maya dan Alex.",
+  title: "Tiara & Siddiq | The Editorial Union",
+  description: "Landing page undangan pernikahan editorial untuk Tiara dan Siddiq.",
 };
 
 export default function RootLayout({
