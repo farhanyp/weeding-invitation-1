@@ -104,7 +104,7 @@ export function TopNavbar() {
             href="/beranda"
             className="font-headline text-2xl font-bold tracking-tighter text-stone-900"
           >
-            The Editorial Union
+            Swarakarya
           </Link>
 
           <div className="hidden items-center gap-8 md:flex">

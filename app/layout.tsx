@@ -3,10 +3,10 @@ import "./globals.css";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "Tiara & Siddiq | The Editorial Union",
+  title: "Tiara & Siddiq | Swarakarya",
   description: "Landing page undangan pernikahan editorial untuk Tiara dan Siddiq.",
 };
 

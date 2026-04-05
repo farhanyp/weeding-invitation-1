@@ -165,9 +165,9 @@ export default function RsvpPage() {
       <footer className="mt-24 w-full bg-surface-container-low py-12">
         <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-6 px-12 md:flex-row">
           <div className="flex flex-col items-center gap-2 md:items-start">
-            <span className="font-headline text-lg italic text-primary">The Editorial Union</span>
+            <span className="font-headline text-lg italic text-primary">Swarakarya</span>
             <p className="text-sm tracking-wide text-primary/60">
-              &copy; 2024 The Editorial Union. Handcrafted for our forever.
+              &copy; 2024 Swarakarya. Handcrafted for our forever.
             </p>
           </div>
           <div className="flex gap-8">

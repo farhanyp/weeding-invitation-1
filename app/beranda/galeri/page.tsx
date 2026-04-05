@@ -2,6 +2,10 @@ import { FiArrowUpRight, FiDownload } from "react-icons/fi";
 import { HiHeart } from "react-icons/hi2";
 
 export default function GalleryPage() {
+  const cloudGalleryUrl = "https://drive.google.com/drive/folders/";
+  const photographerWhatsAppUrl =
+    "https://wa.me/6281234567890?text=Halo%20kak%2C%20saya%20ingin%20bertanya%20soal%20dokumentasi%20foto%20wedding.";
+
   return (
     <main className="bg-background font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
       <div className="mx-auto max-w-7xl px-6 pt-32 pb-24 md:px-12">
@@ -9,12 +13,11 @@ export default function GalleryPage() {
           <div className="grid grid-cols-1 items-end gap-8 md:grid-cols-12">
             <div className="md:col-span-7">
               <h1 className="mb-8 font-headline text-6xl leading-[0.9] tracking-tighter text-primary md:text-8xl">
-                Fragmen <br />{" "}
-                <span className="ml-12 italic text-secondary">Kebahagiaan</span>
+                Fragmen <br /> <span className="ml-12 italic text-secondary">Kebahagiaan</span>
               </h1>
               <p className="max-w-md text-lg leading-relaxed text-on-surface-variant">
-                Kumpulan momen yang tertangkap dalam lensa, merangkum perjalanan
-                cinta kami yang dikurasi secara editorial.
+                Kumpulan momen yang tertangkap dalam lensa, merangkum perjalanan cinta kami yang
+                dikurasi secara editorial.
               </p>
             </div>
             <div className="relative md:col-span-5">
@@ -54,9 +57,7 @@ export default function GalleryPage() {
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8u8zGB3ckAx1xvO-k_2aPAy6MqAdtFqwqg-_LYmgeGu1n6p3DT4zhTRq0OboViUVWr78M9ehtX7m63wNrHChyF-l0U4w33wpIKTfX821g0HPjkCF0J_DY8dZSZMDWyR8vvWygqyQuB8aYx8VLpteY0Z3Bt6mB7M4BaDUvkSNn146oeEnzK2sVTpAtoAPYqrvcVAruHeIOOpuV1OBqkuz7NtDmtmzh7gPTkDEhMkoR-e8m0UZF1XHV8BurXB20ZGr6b3g8m4vSRQYd"
               />
               <div className="p-4">
-                <p className="font-headline text-xl italic text-primary-dim">
-                  Pre-Wedding Bloom
-                </p>
+                <p className="font-headline text-xl italic text-primary-dim">Pre-Wedding Bloom</p>
               </div>
             </div>
           </div>
@@ -66,9 +67,7 @@ export default function GalleryPage() {
             <h3 className="font-headline text-3xl leading-tight text-on-primary">
               Momen yang terhenti dalam waktu.
             </h3>
-            <p className="mt-4 text-sm uppercase italic text-on-primary/60">
-              Editorial Edition
-            </p>
+            <p className="mt-4 text-sm uppercase italic text-on-primary/60">Editorial Edition</p>
           </div>
 
           <div className="mb-8 break-inside-avoid">
@@ -149,17 +148,28 @@ export default function GalleryPage() {
               Ingin Mengunduh Koleksi Lengkap?
             </h2>
             <p className="mb-10 leading-relaxed text-on-surface-variant">
-              Kami telah menyiapkan folder khusus untuk tamu undangan untuk
-              melihat seluruh rangkaian foto dalam resolusi tinggi.
+              Kami telah menyiapkan folder khusus untuk tamu undangan untuk melihat seluruh
+              rangkaian foto dalam resolusi tinggi.
             </p>
             <div className="flex flex-col items-center justify-center gap-6 md:flex-row">
-              <button className="flex items-center gap-3 rounded-xl bg-primary px-8 py-4 font-medium text-on-primary transition-all active:scale-95 hover:shadow-lg">
-                <FiDownload />
+              <a
+                href={cloudGalleryUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="group flex cursor-pointer items-center gap-3 rounded-xl bg-primary px-8 py-4 font-medium text-on-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_34px_rgba(60,62,22,0.35)] active:scale-95"
+              >
+                <FiDownload className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110" />
                 Akses Galeri Cloud
-              </button>
-              <button className="border-b-2 border-tertiary-fixed-dim px-1 py-2 font-medium text-primary transition-colors hover:text-tertiary-dim">
+              </a>
+              <a
+                href={photographerWhatsAppUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="group border-b-2 cursor-pointer border-tertiary-fixed-dim px-1 py-2 font-medium text-primary transition-all duration-300 hover:border-tertiary-dim hover:text-tertiary-dim"
+              >
                 Hubungi Fotografer
-              </button>
+                <FiArrowUpRight className="ml-1 inline transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </a>
             </div>
           </div>
         </section>
@@ -167,9 +177,7 @@ export default function GalleryPage() {
 
       <footer className="w-full border-t border-stone-200 bg-stone-100 px-8 py-12">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 md:flex-row">
-          <div className="font-headline text-xl italic text-stone-900">
-            The Editorial Union
-          </div>
+          <div className="font-headline text-xl italic text-stone-900">Swarakarya</div>
           <div className="flex gap-8">
             <a className="font-body text-xs uppercase tracking-widest text-stone-500 transition-colors hover:text-stone-900">
               Privacy Policy
@@ -182,13 +190,10 @@ export default function GalleryPage() {
             </a>
           </div>
           <div className="font-body text-xs uppercase tracking-widest text-stone-500">
-            &copy; 2024 The Editorial Union. Designed for the modern couple.
+            &copy; 2024 Swarakarya. Designed for the modern couple.
           </div>
         </div>
       </footer>
     </main>
   );
 }
-
-
-

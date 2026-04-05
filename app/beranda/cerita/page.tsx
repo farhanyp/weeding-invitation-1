@@ -151,7 +151,7 @@ export default function CeritaPage() {
             <div className="mt-8 flex items-center gap-4">
               <div className="h-px w-12 bg-outline-variant" />
               <span className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">
-                The Editorial Union
+                Swarakarya
               </span>
             </div>
           </div>
@@ -192,7 +192,7 @@ export default function CeritaPage() {
 
       <footer className="w-full border-t border-stone-200 bg-stone-100 px-8 py-12">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 md:flex-row">
-          <div className="font-headline text-xl italic text-stone-900">The Editorial Union</div>
+          <div className="font-headline text-xl italic text-stone-900">Swarakarya</div>
           <div className="flex gap-8">
             <a
               className="font-body text-xs uppercase tracking-widest text-stone-500 transition-colors hover:text-stone-900"
@@ -214,12 +214,10 @@ export default function CeritaPage() {
             </a>
           </div>
           <div className="font-body text-xs uppercase tracking-widest text-stone-500">
-            © 2024 The Editorial Union. Designed for the modern couple.
+            © 2024 Swarakarya. Designed for the modern couple.
           </div>
         </div>
       </footer>
     </main>
   );
 }
-
-
