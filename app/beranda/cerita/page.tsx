@@ -7,56 +7,6 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 export default function CeritaPage() {
   return (
     <main className="bg-surface text-on-surface">
-      <nav className="fixed top-0 z-50 flex w-full max-w-full items-center justify-between bg-stone-50/70 px-6 py-4 shadow-sm backdrop-blur-xl md:px-12">
-        <div className="font-headline text-2xl font-bold tracking-tighter text-stone-900">
-          The Editorial Union
-        </div>
-        <div className="hidden items-center gap-8 md:flex">
-          <Link
-            className="font-headline text-lg italic tracking-tight text-stone-600 transition-colors hover:text-stone-900"
-            href="/"
-          >
-            Home
-          </Link>
-          <a
-            className="border-b-2 border-orange-800 pb-1 font-headline text-lg font-semibold italic tracking-tight text-orange-800"
-            href="#"
-          >
-            Cerita Kami
-          </a>
-          <Link
-            className="font-headline text-lg italic tracking-tight text-stone-600 transition-colors hover:text-stone-900"
-            href="/#acara"
-          >
-            Detail Acara
-          </Link>
-          <Link
-            className="font-headline text-lg italic tracking-tight text-stone-600 transition-colors hover:text-stone-900"
-            href="/#galeri"
-          >
-            Galeri
-          </Link>
-          <Link
-            className="font-headline text-lg italic tracking-tight text-stone-600 transition-colors hover:text-stone-900"
-            href="/#rsvp"
-          >
-            RSVP
-          </Link>
-          <Link
-            className="font-headline text-lg italic tracking-tight text-stone-600 transition-colors hover:text-stone-900"
-            href="/#hadiah"
-          >
-            Kirim Hadiah
-          </Link>
-        </div>
-        <Link
-          className="rounded-xl bg-secondary px-6 py-2 font-semibold text-on-secondary transition-opacity hover:opacity-80 active:scale-95 duration-200"
-          href="/#rsvp"
-        >
-          RSVP Now
-        </Link>
-      </nav>
-
       <header className="mx-auto flex max-w-7xl flex-col items-end gap-8 px-6 pt-40 pb-24 md:flex-row md:px-12">
         <div className="flex-1">
           <span className="mb-4 block font-bold uppercase tracking-[0.3em] text-secondary text-xs">
@@ -227,13 +177,13 @@ export default function CeritaPage() {
         <div className="flex justify-center gap-6">
           <Link
             className="rounded-xl bg-secondary px-10 py-4 text-sm font-bold uppercase tracking-widest text-on-secondary shadow-lg transition-all hover:opacity-90"
-            href="/#rsvp"
+            href="/beranda#rsvp"
           >
             Konfirmasi Kehadiran
           </Link>
           <Link
             className="rounded-xl border border-primary px-10 py-4 text-sm font-bold uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-on-primary"
-            href="/#acara"
+            href="/beranda#acara"
           >
             Detail Acara
           </Link>
@@ -271,3 +221,5 @@ export default function CeritaPage() {
     </main>
   );
 }
+
+

@@ -1,16 +1,15 @@
 "use client";
 
-import { type ReactNode, useState } from "react";
-import { FiMail, FiMenu } from "react-icons/fi";
+import Link from "next/link";
+import { type ReactNode } from "react";
+import { FiMail } from "react-icons/fi";
 
 type InvitationGateProps = {
-  children: ReactNode;
+  children?: ReactNode;
 };
 
 export function InvitationGate({ children }: InvitationGateProps) {
-  const [opened, setOpened] = useState(false);
-
-  if (opened) {
+  if (children) {
     return <>{children}</>;
   }
 
@@ -45,14 +44,13 @@ export function InvitationGate({ children }: InvitationGateProps) {
         </div>
 
         <div className="flex flex-col items-center gap-6">
-          <button
-            onClick={() => setOpened(true)}
+          <Link
+            href="/beranda"
             className="group relative flex items-center gap-3 rounded-full bg-secondary px-10 py-5 font-label text-sm font-bold tracking-widest text-on-secondary shadow-[0_12px_40px_rgba(159,66,38,0.3)] transition-all duration-500 hover:scale-105 hover:bg-secondary-dim cursor-pointer"
-            type="button"
           >
             <FiMail size={18} />
             BUKA UNDANGAN
-          </button>
+          </Link>
         </div>
       </div>
 

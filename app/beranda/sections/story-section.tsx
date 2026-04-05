@@ -32,7 +32,7 @@ export function StorySection() {
           </p>
           <div className="w-56">
             <Link
-              href="/landing-page/cerita"
+              href="/beranda/cerita"
               className="group flex items-center gap-3 border-b-2 border-primary-container pb-1 font-label text-sm font-bold uppercase tracking-wider text-primary transition-all hover:border-secondary hover:text-secondary"
             >
               Lihat Cerita Lengkap
@@ -44,3 +44,5 @@ export function StorySection() {
     </section>
   );
 }
+
+

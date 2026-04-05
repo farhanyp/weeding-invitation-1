@@ -1,60 +1,9 @@
-﻿import Link from "next/link";
 import { FiArrowUpRight, FiDownload } from "react-icons/fi";
 import { HiHeart } from "react-icons/hi2";
 
 export default function GalleryPage() {
   return (
     <main className="bg-background font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
-      <nav className="fixed top-0 z-50 w-full bg-stone-50/70 shadow-sm backdrop-blur-xl">
-        <div className="flex max-w-full items-center justify-between px-6 py-4 md:px-12">
-          <div className="font-headline text-2xl font-bold tracking-tighter text-stone-900">
-            The Editorial Union
-          </div>
-          <div className="hidden items-center gap-8 md:flex">
-            <Link
-              className="font-headline text-lg italic tracking-tight text-stone-600 transition-colors hover:text-stone-900"
-              href="/"
-            >
-              Home
-            </Link>
-            <Link
-              className="font-headline text-lg italic tracking-tight text-stone-600 transition-colors hover:text-stone-900"
-              href="/landing-page/cerita"
-            >
-              Cerita Kami
-            </Link>
-            <Link
-              className="font-headline text-lg italic tracking-tight text-stone-600 transition-colors hover:text-stone-900"
-              href="/#acara"
-            >
-              Detail Acara
-            </Link>
-            <a className="border-b-2 border-orange-800 pb-1 font-headline text-lg font-semibold italic tracking-tight text-orange-800">
-              Galeri
-            </a>
-            <Link
-              className="font-headline text-lg italic tracking-tight text-stone-600 transition-colors hover:text-stone-900"
-              href="/#rsvp"
-            >
-              RSVP
-            </Link>
-            <Link
-              className="font-headline text-lg italic tracking-tight text-stone-600 transition-colors hover:text-stone-900"
-              href="/#hadiah"
-            >
-              Kirim Hadiah
-            </Link>
-          </div>
-          <Link
-            href="/#rsvp"
-            className="rounded-xl bg-secondary px-6 py-2 font-medium text-on-secondary transition-opacity duration-300 hover:opacity-80 active:scale-95"
-          >
-            RSVP Now
-          </Link>
-        </div>
-        <div className="h-px w-full bg-stone-100/50" />
-      </nav>
-
       <div className="mx-auto max-w-7xl px-6 pt-32 pb-24 md:px-12">
         <header className="relative mb-24 md:mb-40">
           <div className="grid grid-cols-1 items-end gap-8 md:grid-cols-12">
@@ -240,4 +189,6 @@ export default function GalleryPage() {
     </main>
   );
 }
+
+
 

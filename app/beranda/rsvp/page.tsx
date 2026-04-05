@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FiArrowLeft, FiChevronDown, FiEdit3, FiMenu } from "react-icons/fi";
+import { FiArrowLeft, FiChevronDown, FiEdit3 } from "react-icons/fi";
 import { HiSparkles } from "react-icons/hi2";
 import { RiDoubleQuotesL } from "react-icons/ri";
 
@@ -112,49 +112,6 @@ function WishCard({ wish }: { wish: Wish }) {
 export default function RsvpPage() {
   return (
     <main className="bg-surface text-on-surface">
-      <header className="fixed top-0 z-50 w-full bg-surface/70 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-4">
-          <Link
-            className="font-headline text-2xl font-bold italic tracking-tight text-primary"
-            href="/"
-          >
-            The Editorial Union
-          </Link>
-          <nav className="hidden items-center gap-8 md:flex">
-            <Link
-              className="text-sm text-primary/80 transition-all hover:text-secondary"
-              href="/landing-page/cerita"
-            >
-              Our Story
-            </Link>
-            <Link
-              className="text-sm text-primary/80 transition-all hover:text-secondary"
-              href="/#acara"
-            >
-              Events
-            </Link>
-            <Link
-              className="text-sm text-primary/80 transition-all hover:text-secondary"
-              href="/landing-page/galeri"
-            >
-              Gallery
-            </Link>
-            <span className="border-b-2 border-secondary pb-1 text-sm font-bold text-secondary">
-              Wishes
-            </span>
-            <Link
-              className="rounded-xl bg-secondary px-6 py-2 font-medium text-on-secondary"
-              href="/#rsvp"
-            >
-              RSVP
-            </Link>
-          </nav>
-          <button className="text-primary md:hidden" aria-label="menu">
-            <FiMenu />
-          </button>
-        </div>
-      </header>
-
       <section className="mx-auto max-w-7xl px-6 pt-32 pb-24 md:px-12 lg:px-24">
         <div className="mb-24">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-surface-container-high px-4 py-1 text-xs uppercase tracking-widest text-on-surface-variant">
@@ -168,15 +125,6 @@ export default function RsvpPage() {
             Terima kasih atas segala ucapan manis dan doa tulus yang telah diberikan. Kehadiran dan
             perhatian Anda adalah kado terindah bagi perjalanan baru kami.
           </p>
-          <div className="mt-12">
-            <Link
-              className="inline-flex items-center gap-3 font-semibold text-secondary transition-all hover:gap-5"
-              href="/"
-            >
-              <FiArrowLeft />
-              Kembali ke Beranda
-            </Link>
-          </div>
         </div>
 
         <section className="grid grid-cols-1 items-start gap-8 md:grid-cols-12">
