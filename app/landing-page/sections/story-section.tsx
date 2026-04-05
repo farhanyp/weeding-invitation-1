@@ -6,7 +6,7 @@ export function StorySection() {
     <section className="bg-surface px-6 py-24 md:px-24" id="cerita">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 md:grid-cols-2">
         <div className="relative">
-          <div className="aspect-[3/4] overflow-hidden rounded-xl shadow-2xl">
+          <div className="aspect-3/4 overflow-hidden rounded-xl shadow-2xl">
             <img
               className="h-full w-full object-cover"
               alt="vintage style warm toned photograph"
