@@ -1,4 +1,5 @@
-﻿export { buildProfessionalOneMetadata, ProfessionalOneLayout } from "./core/layout";
+export { buildProfessionalOneMetadata, ProfessionalOneLayout } from "./core/layout";
+export { InvitationGate } from "./invitation-gate";
 export { ProfessionalOneLandingPage } from "./pages/landing-page";
 export { ProfessionalOneCeritaPage } from "./pages/cerita-page";
 export { ProfessionalOneGaleriPage } from "./pages/galeri-page";

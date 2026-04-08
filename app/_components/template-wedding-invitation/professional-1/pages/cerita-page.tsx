@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
 import { HiHeart, HiSparkles } from "react-icons/hi2";
 import { MdOutlineDiamond } from "react-icons/md";

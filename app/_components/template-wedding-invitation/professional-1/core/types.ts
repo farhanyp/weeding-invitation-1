@@ -15,4 +15,5 @@ export type ProfessionalOneInvitationData = {
 export type ProfessionalOneTemplateData = {
   metadata: ProfessionalOneMetadata;
   invitation: ProfessionalOneInvitationData;
+  url: string;
 };

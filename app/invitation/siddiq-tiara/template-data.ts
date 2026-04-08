@@ -13,4 +13,5 @@ export const siddiqTiaraTemplateData: ProfessionalOneTemplateData = {
     weddingDateLabel: "24 September 2024",
     venueLabel: "The Glass House, Jakarta",
   },
+  url: "/invitation/siddiq-tiara/beranda",
 };
