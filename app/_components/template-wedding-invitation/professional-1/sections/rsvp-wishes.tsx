@@ -21,7 +21,7 @@ export function ProfessionalOneRsvpWishes({ wishes }: RsvpWishesProps) {
           <div key={wish.id} className={cn("flex gap-4", isRight && "flex-row-reverse")}>
             <div
               className={cn(
-                "flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full font-bold",
+                "flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-bold",
                 isPrimary && "bg-primary-container text-on-primary-container",
                 isTertiary && "bg-tertiary-container text-on-tertiary-container",
                 !isPrimary && !isTertiary && "bg-secondary-container text-on-secondary-container",
