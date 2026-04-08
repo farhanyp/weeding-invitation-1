@@ -15,15 +15,6 @@ type NavItem = {
   label: string;
 };
 
-const navItems: NavItem[] = [
-  { key: "home", label: "Home", href: "/beranda" },
-  { key: "acara", label: "Detail Acara", href: "/beranda#acara" },
-  { key: "cerita", label: "Cerita Kami", href: "/beranda#cerita" },
-  { key: "galeri", label: "Galeri", href: "/beranda#galeri" },
-  { key: "hadiah", label: "Kirim Hadiah", href: "/beranda#hadiah" },
-  { key: "rsvp", label: "RSVP", href: "/beranda/rsvp" },
-];
-
 const sectionItems: Array<{ id: string; key: NavKey }> = [
   { id: "acara", key: "acara" },
   { id: "cerita", key: "cerita" },
@@ -32,7 +23,12 @@ const sectionItems: Array<{ id: string; key: NavKey }> = [
   { id: "rsvp", key: "rsvp" },
 ];
 
-export function TopNavbar() {
+type TopNavbarProps = {
+  basePath: string;
+  brandLabel?: string;
+};
+
+export function ProfessionalOneTopNavbar({ basePath, brandLabel = "Kala Waktu" }: TopNavbarProps) {
   const [open, setOpen] = useState(false);
   const [sectionActiveNav, setSectionActiveNav] = useState<NavKey>("home");
   const pathname = usePathname();
@@ -42,25 +38,37 @@ export function TopNavbar() {
 
   const closeMenu = () => setOpen(false);
 
+  const navItems: NavItem[] = useMemo(
+    () => [
+      { key: "home", label: "Home", href: basePath },
+      { key: "acara", label: "Detail Acara", href: `${basePath}#acara` },
+      { key: "cerita", label: "Cerita Kami", href: `${basePath}#cerita` },
+      { key: "galeri", label: "Galeri", href: `${basePath}#galeri` },
+      { key: "hadiah", label: "Kirim Hadiah", href: `${basePath}#hadiah` },
+      { key: "rsvp", label: "RSVP", href: `${basePath}/rsvp` },
+    ],
+    [basePath],
+  );
+
   const pageActiveNav = useMemo<NavKey | null>(() => {
-    if (pathname === "/beranda/cerita") {
+    if (pathname === `${basePath}/cerita`) {
       return "cerita";
     }
 
-    if (pathname === "/beranda/galeri") {
+    if (pathname === `${basePath}/galeri`) {
       return "galeri";
     }
 
-    if (pathname === "/beranda/rsvp") {
+    if (pathname === `${basePath}/rsvp`) {
       return "rsvp";
     }
 
-    if (pathname === "/beranda") {
+    if (pathname === basePath) {
       return null;
     }
 
     return "home";
-  }, [pathname]);
+  }, [basePath, pathname]);
 
   useEffect(() => {
     if (pageActiveNav) {
@@ -99,10 +107,10 @@ export function TopNavbar() {
     <nav className="fixed top-0 z-50 w-full max-w-full bg-stone-50/70 shadow-sm backdrop-blur-xl">
       <div className="flex items-center justify-between px-6 py-4 md:px-12">
         <Link
-          href="/beranda"
+          href={basePath}
           className="font-headline text-2xl font-bold tracking-tighter text-stone-900"
         >
-          Swarakarya
+          {brandLabel}
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">
@@ -131,7 +139,7 @@ export function TopNavbar() {
           asChild
           className="hidden rounded-xl bg-secondary px-6 py-2 font-medium text-on-secondary transition-opacity hover:opacity-80 active:scale-95 md:inline-flex"
         >
-          <Link href="/beranda#rsvp">RSVP Now</Link>
+          <Link href={`${basePath}#rsvp`}>RSVP Now</Link>
         </Button>
 
         <Button
@@ -199,7 +207,7 @@ export function TopNavbar() {
             );
           })}
           <Link
-            href="/beranda#rsvp"
+            href={`${basePath}#rsvp`}
             className="mt-2 inline-flex w-full items-center justify-center rounded-xl bg-secondary px-6 py-3 font-medium text-on-secondary transition-opacity hover:opacity-80"
             onClick={closeMenu}
           >

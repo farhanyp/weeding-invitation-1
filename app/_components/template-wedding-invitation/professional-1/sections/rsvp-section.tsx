@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { RsvpWishes } from "@/app/beranda/sections/rsvp-wishes";
+import { ProfessionalOneRsvpWishes } from "./rsvp-wishes";
 import type { AttendanceStatus, RsvpFormData, Wish } from "@/types/rsvp";
 
 const initialWishes: Wish[] = [
@@ -55,7 +55,7 @@ function toneByAttendance(status: AttendanceStatus): Wish["tone"] {
   return "default";
 }
 
-export function RsvpSection() {
+export function ProfessionalOneRsvpSection() {
   const [formData, setFormData] = useState<RsvpFormData>(initialFormData);
   const [wishes, setWishes] = useState<Wish[]>(initialWishes);
   const [feedback, setFeedback] = useState("");
@@ -221,7 +221,7 @@ export function RsvpSection() {
           </div>
         </div>
 
-        <RsvpWishes wishes={wishes} />
+        <ProfessionalOneRsvpWishes wishes={wishes} />
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 import { FiCamera, FiInstagram, FiMail, FiMessageCircle, FiPhoneCall } from "react-icons/fi";
 import { FaTiktok } from "react-icons/fa6";
 
-export function FooterSection() {
+export function ProfessionalOneFooterSection() {
   return (
     <footer className="border-t border-stone-200 bg-stone-50">
       <div className="mx-auto max-w-7xl px-6 py-16">

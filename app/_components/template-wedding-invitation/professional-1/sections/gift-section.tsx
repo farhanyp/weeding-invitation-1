@@ -10,7 +10,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-export function GiftSection() {
+export function ProfessionalOneGiftSection() {
   const qrisImage =
     "https://lh3.googleusercontent.com/aida-public/AB6AXuCeJbPRvdEd5_RMkATSZXpMd_zd_jf4aJ_tupCvIvNT5ly80EsTTPF1txSi-fFOS3uqgygzv8yjIeWEPhBTUBPsoOI-S1-mavM0KHf8g8VnFqZ_HgLotQcVqexgTN9AjG9DR8hw3zPcj2_2qhZdYx5hwIGplHf-FuMMQFJf-pQVqphT0QguqMZU2uG13b614dXIqvEYLBZEtPgFe399nytpCFl0QBzS1CmoqgGZJooRlnr6181WEXRQdU2Cdf1omniuV1sR4J5rqR47";
 

@@ -1,6 +1,10 @@
 import Link from "next/link";
 
-export function GallerySection() {
+type GallerySectionProps = {
+  basePath: string;
+};
+
+export function ProfessionalOneGallerySection({ basePath }: GallerySectionProps) {
   return (
     <section className="overflow-hidden px-6 py-24" id="galeri">
       <div className="mx-auto max-w-7xl">
@@ -10,7 +14,7 @@ export function GallerySection() {
             <p className="mt-2 italic text-on-surface-variant">Capture in time, frozen in love.</p>
           </div>
           <Link
-            href="/beranda/galeri"
+            href={`${basePath}/galeri`}
             className="hidden border-b-2 border-primary-container pb-1 font-label text-sm font-bold uppercase tracking-widest text-primary transition-all md:block hover:border-secondary hover:text-secondary"
           >
             Lihat Semua Foto
@@ -48,7 +52,7 @@ export function GallerySection() {
         </div>
         <div className="mt-16 text-center md:hidden">
           <Link
-            href="/beranda/galeri"
+            href={`${basePath}/galeri`}
             className="border-b-2 border-primary-container pb-1 font-label text-sm font-bold uppercase tracking-widest text-primary"
           >
             Lihat Semua Foto

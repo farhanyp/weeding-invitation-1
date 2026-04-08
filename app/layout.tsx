@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import "./globals.css";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "Tiara & Siddiq | Swarakarya",
-  description: "Landing page undangan pernikahan editorial untuk Tiara dan Siddiq.",
+  title: "Kala Waktu | Digital Invitation Studio",
+  description: "Kala Waktu menghadirkan undangan digital elegan dengan URL personal untuk setiap pasangan.",
 };
 
 export default function RootLayout({
@@ -21,3 +21,4 @@ export default function RootLayout({
     </html>
   );
 }
+

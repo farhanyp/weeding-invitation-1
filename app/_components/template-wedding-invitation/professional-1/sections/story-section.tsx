@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
 
-export function StorySection() {
+type StorySectionProps = {
+  basePath: string;
+};
+
+export function ProfessionalOneStorySection({ basePath }: StorySectionProps) {
   return (
     <section className="bg-surface px-6 py-24 md:px-24" id="cerita">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 md:grid-cols-2">
@@ -32,7 +36,7 @@ export function StorySection() {
           </p>
           <div className="w-56">
             <Link
-              href="/beranda/cerita"
+              href={`${basePath}/cerita`}
               className="group flex items-center gap-3 border-b-2 border-primary-container pb-1 font-label text-sm font-bold uppercase tracking-wider text-primary transition-all hover:border-secondary hover:text-secondary"
             >
               Lihat Cerita Lengkap

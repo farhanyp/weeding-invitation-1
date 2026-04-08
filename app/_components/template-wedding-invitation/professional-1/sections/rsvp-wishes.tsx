@@ -5,7 +5,7 @@ interface RsvpWishesProps {
   wishes: Wish[];
 }
 
-export function RsvpWishes({ wishes }: RsvpWishesProps) {
+export function ProfessionalOneRsvpWishes({ wishes }: RsvpWishesProps) {
   return (
     <div className="space-y-6">
       <h3 className="mb-8 text-center font-headline text-2xl italic text-primary">

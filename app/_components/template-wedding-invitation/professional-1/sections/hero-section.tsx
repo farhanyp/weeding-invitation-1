@@ -1,6 +1,11 @@
-import { FiChevronDown } from "react-icons/fi";
+﻿import { FiChevronDown } from "react-icons/fi";
+import type { ProfessionalOneInvitationData } from "../core/types";
 
-export function HeroSection() {
+type HeroSectionProps = {
+  invitation: ProfessionalOneInvitationData;
+};
+
+export function ProfessionalOneHeroSection({ invitation }: HeroSectionProps) {
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden pt-20">
       <div className="absolute inset-0 z-0">
@@ -16,18 +21,18 @@ export function HeroSection() {
           The Wedding Celebration of
         </span>
         <h1 className="mb-8 font-headline text-[5rem] leading-[0.9] font-light italic text-primary md:text-[8rem]">
-          Tiara <span className="text-secondary">&amp;</span> Siddiq
+          {invitation.partnerOne} <span className="text-secondary">&amp;</span> {invitation.partnerTwo}
         </h1>
         <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-12">
           <div className="text-center">
             <p className="font-headline text-2xl italic text-on-surface-variant">
-              24 September 2024
+              {invitation.weddingDateLabel}
             </p>
           </div>
           <div className="hidden h-px w-12 bg-outline-variant md:block" />
           <div className="text-center">
             <p className="font-headline text-2xl italic text-on-surface-variant">
-              The Glass House, Jakarta
+              {invitation.venueLabel}
             </p>
           </div>
         </div>
@@ -38,5 +43,3 @@ export function HeroSection() {
     </section>
   );
 }
-
-

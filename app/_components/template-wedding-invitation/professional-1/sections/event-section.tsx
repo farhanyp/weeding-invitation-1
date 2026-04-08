@@ -1,7 +1,7 @@
 import { FiHeart, FiMapPin } from "react-icons/fi";
 import { HiSparkles } from "react-icons/hi2";
 
-export function EventSection() {
+export function ProfessionalOneEventSection() {
   return (
     <section className="bg-surface-container-low px-6 py-24" id="acara">
       <div className="mx-auto max-w-7xl">
